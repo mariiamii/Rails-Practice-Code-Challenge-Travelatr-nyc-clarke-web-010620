@@ -1,0 +1,20 @@
+<h1>Edit Post</h1>
+<p>Find me in app/views/posts/edit.html.erb</p>
+
+<%= form_for @post do |f| %>
+<%= f.label  :title %>
+<%= f.text_field :title %>
+
+<%= f.label  :content %>
+<%= f.text_area :content %>
+
+
+<%= f.label  :destination_id %>
+<%= f.number_field :destination_id %>
+
+<%= f.label  :blogger_id %>
+<%= f.number_field :blogger_id %>
+
+
+<%= f.submit%>
+<% end %>

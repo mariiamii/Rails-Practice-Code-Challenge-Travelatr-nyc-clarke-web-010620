@@ -1,0 +1,10 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each do |post| %>
+    <%= post.title %> </br>
+    <%= post.content %> </br>
+    <%= post.likes %> </br>
+    <%= post.blogger_id %> </br>
+    <%= post.destination_id %> </br>
+<% end %>
